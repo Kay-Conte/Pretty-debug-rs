@@ -9,7 +9,7 @@ as a test to publish to crates.io
 
 Simply define an enum implementing the Debugger trait as following:
 
-```rust
+``` rs
 enum Debug {
     Module,
 }
@@ -28,7 +28,7 @@ Note: the return of the `display` function are used as a prefix.
 
 Then call the debug method on the desired variant of your enum:
 
-```rust
+``` rs
 Debug::Module.debug("This was sent from the Module module")
 ```
 
@@ -39,5 +39,3 @@ You may refer to the provided example for additional ergonomics.
 I expect this crate to only be in use by me, though feel free to make any requests through github with additional features or changes.
 
 I may add some other smaller features in the future if desired for my projects, such as a suffix and default function definitions later.
-
-<sub>I also may have made 3 publishes trying to figure out why crates.io wasn't coloring my code</sub>
