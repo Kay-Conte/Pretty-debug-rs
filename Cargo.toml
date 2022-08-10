@@ -1,5 +1,5 @@
 [package]
-name = "debugger-rs"
+name = "pretty_debug"
 description = "Simple crate for module based formatted console prints"
 repository = "https://github.com/Kay-Conte/Debugger-rs"
 version = "0.1.0"

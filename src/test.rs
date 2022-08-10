@@ -1,18 +1,18 @@
-use crate::{debug, ModuleTag};
+use crate::Debugger;
 
-pub enum Modules {
+pub enum Debug {
     Test,
 }
 
-impl ModuleTag for Modules {
+impl Debugger for Debug {
     fn display(&self) -> String {
         match self {
-            Modules::Test => String::from("[Test]"),
+            Debug::Test => String::from("[Test]"),
         }
     }
 }
 
 #[test]
 fn test_debug() {
-    debug(&Modules::Test, "Test")
+    Debug::Test.debug("Sent from the test module")
 }

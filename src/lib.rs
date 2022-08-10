@@ -1,11 +1,11 @@
 #[cfg(test)]
 mod test;
 
-pub trait ModuleTag {
+pub trait Debugger {
     fn display(&self) -> String;
-}
 
-#[inline]
-pub fn debug(module: &dyn ModuleTag, message: &str) {
-    println!("{} {}", module.display(), message)
+    #[inline]
+    fn debug(&self, message: &str) {
+        println!("{} {}", self.display(), message)
+    }
 }
