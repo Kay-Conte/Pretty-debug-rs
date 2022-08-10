@@ -9,7 +9,7 @@ as a test to publish to crates.io
 
 Simply define an enum implementing the Debugger trait as following:
 
-``` rs
+``` rust
 enum Debug {
     Module,
 }
@@ -28,7 +28,7 @@ Note: the return of the `display` function are used as a prefix.
 
 Then call the debug method on the desired variant of your enum:
 
-``` rs
+``` rust
 Debug::Module.debug("This was sent from the Module module")
 ```
 
